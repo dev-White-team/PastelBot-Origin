@@ -8,11 +8,11 @@ from discord import ApplicationContext, DiscordException, Embed, ExtensionFailed
 from discord.ext import commands
 from discord.ext.commands import Context
 
-from .crypt import AESCipher
-from .database import Database
 from config import BAD, STATUS
 from constants import OPTION_TYPES, DATABASE_INIT
 from utils import setup_logging
+from .crypt import AESCipher
+from .database import Database
 
 
 class Bot(commands.Bot):

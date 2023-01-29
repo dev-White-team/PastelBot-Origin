@@ -128,5 +128,5 @@ class SimpleGame(Cog):
 
 
 def setup(bot):
-    bot.add_cog(SimpleGame())
     logger.info("Loaded")
+    bot.add_cog(SimpleGame())

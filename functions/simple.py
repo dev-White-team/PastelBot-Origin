@@ -15,7 +15,7 @@ class SimpleGame(Cog):
     async def rsp(
             self,
             ctx: ApplicationContext,
-            user: Option(str, "낼 것을 선택하세요", choices=["가위", "바위", "보"]),
+            user: Option(str, "낼 것을 선택하세요", choices=["가위", "바위", "보"], name="입력"),
     ):
         rsp_table = ["가위", "바위", "보"]
         bot = choice(rsp_table)
@@ -38,9 +38,9 @@ class SimpleGame(Cog):
     async def dice(
             self,
             ctx: ApplicationContext,
-            firstn: Option(int, "첫번째 숫자를 정하세요. 두번째 숫자가 없을 경우 범위는 1 ~ firstn으로 결정됩니다."),
+            firstn: Option(int, "첫번째 숫자를 정하세요. 두번째 숫자가 없을 경우 범위는 1 ~ firstn으로 결정됩니다.", name="범위 1"),
             secondn: Option(
-                int, "두번째 숫자가 있을 경우 범위는 firstn ~ secondn으로 결정됩니다. ", required=False
+                int, "두번째 숫자가 있을 경우 범위는 firstn ~ secondn으로 결정됩니다. ", required=False, name="범위 2"
             ),
     ):
         try:

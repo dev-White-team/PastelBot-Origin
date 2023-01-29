@@ -38,9 +38,9 @@ class SimpleGame(Cog):
     async def dice(
             self,
             ctx: ApplicationContext,
-            firstn: Option(int, "첫번째 숫자를 정하세요. 두번째 숫자가 없을 경우 범위는 1 ~ firstn으로 결정됩니다.", name="범위 1"),
+            firstn: Option(int, "첫번째 숫자를 정하세요. 두번째 숫자가 없을 경우 범위는 1 ~ firstn으로 결정됩니다.", name="범위1"),
             secondn: Option(
-                int, "두번째 숫자가 있을 경우 범위는 firstn ~ secondn으로 결정됩니다. ", required=False, name="범위 2"
+                int, "두번째 숫자가 있을 경우 범위는 firstn ~ secondn으로 결정됩니다. ", required=False, name="범위2"
             ),
     ):
         try:

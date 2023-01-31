@@ -1,8 +1,7 @@
 from .help import HelpMenu
-from .tictactoe import TicTacToe, TicTacToeButton
+from .tictactoe import TicTacToe
 
 __all__ = [
     "HelpMenu",
-    "TicTacToe",
-    "TicTacToeButton"
+    "TicTacToe"
 ]
